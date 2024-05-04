@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MADHUKAR VASIREDDY</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">MADHUKAR VASIREDDY .</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/yalli.jpeg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>MADHUKAR VASIREDDY .</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'HEALTH AND SAFETY MANAGER  ',
+						'15yrs experience.  ',
+						'LEAD AUDITOR   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>IDIP,IMS,GRAD IOSH,PMP</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/madhukar-vasireddy-idip-ims-lead-auditor-grad-iosh-pmp%C2%AE-42b748167/" class="btn btn-primary py-3 px-4">linkedin</a> 
+							<a href="" class=""></a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="C:\Users\rudra\OneDrive\Desktop\dad.jpeg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>MADHUKAR VASIREDDY .</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Health and Safety Manager</span></p>
+										<p><span class="title-s">Overall Experience: </span> <span>15years+</span></p>
+										<p><span class="title-s">Address: </span> <span>Doha, Qatar</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								
+									
+									
+									
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I am confident that my credentials will confirm my capable of serving as a lead catalyst for achieving HS&E objectives and to establish sustainable business continuity model in view of HSE for the organization through effective contributions. Having Bachelor degree in Mechanical Engineering, NEBOSH Diploma ( Level 6) and relevant professional certifications. Dedicated professional with almost 17 years of experience in Occupational Health and Safety Management, 
+									Planning, Implementation, Management Consultation, Site Operations, Resource Administration, Trainings Coordination, health and hygiene inspections, Client Relationship Management and People Management in various Construction, MEP, Hydro carbon, Plants construction, Industrial, Construction, Facility & property Management, & infrastructure projects. 
+									Having competency in system Integration & audits, As a certified lead auditor in ISO 45001, 14001 and OHSAS 18001. 
+
+								<p></p>	I understand that working for organization requires a incumbent who has worked in Core 
+									engineering with HSE background; team oriented and is able to deal & liaise with people in various departments. I have worked as key player in construction, associated industries in Middle East and India, and possessed various experiences in handling sub-contractors and trades. I am confident that I possess the skills to deal with the contractual, legal HSE concerns, which will help me to perform the job efficiently and effectively. 
+									I always look forward to transit my enthusiasm, creativity & competency into a position, where I 
+									continue to provide the strategic and consistent leadership independently and as a valuable member of an organisation. I am certain that my presence in your team will prove to be beneficial to the organisation.
+									As a certified PMP professional, enhances my out of box think to resolve many professional risks associated in achieving the targeted milestones. .</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>HSE MANAGER &amp; Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>SAFETY &amp; </span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi,Telugu,</span></li>
+									
+									<li class="d-flex"><span>Other Skills:</span> <span>Personal skills 
+										 Verbal communication 
+										 Professional presentation 
+										 Professional practice 
+										Evidenced-based practice 
+										 Knowledge management 
+										 Problem solving and critical thinking 
+										 Evidenced-based practice
+										Empowerment 
+										 Mentoring 
+										 Influence 
+										Leadership 
+										 Teamwork 
+										 Negotiation and management of conflict 
+										 Leadership 
+										Management 
+										 Project management and management of change 
+										 Managing others 
+										Professional and ethical practice 
+										 Professional practice 
+										 Ethical practice 
+										 Professional technical skills 
+										 Training 
+										 Surveying, inspecting and auditing 
+										 Investigating 
+										 Measuring and recording &amp; </span></li>
+									<li class="d-flex"><span></span> <span></span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="10">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/madhukar-vasireddy-idip-ims-lead-auditor-grad-iosh-pmp%C2%AE-42b748167/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Seasoned Senior health and safety manager with adequate experience over 15+ years of experience.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Feb 2017 - Present</span>
+					<h2>Occupational Health, Safety, and Environment Manager</h2>
+					<span class="position">Qatar</span>
+					<p class="mt-4">Responsible for ensuring Occupational Health, Safety, and Environmental compliance in construction projects. Key responsibilities include:
+						<ul>
+							<li>Implementing behavior-based safety programs and conducting regular safety inspections.</li>
+							<li>Developing and managing safety training programs for site personnel.</li>
+							<li>Leading incident investigations and implementing corrective actions.</li>
+							<li>Collaborating with project teams to integrate safety into project planning and execution.</li>
+							<li>Managing safety documentation and regulatory compliance.</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Jan 2012 - Jan 2017</span>
+					<h2>Environment, Health and Safety Manager</h2>
+					<span class="position">GMR Group</span>
+					<p class="mt-4">Led Environmental, Health, and Safety initiatives for construction projects in Delhi, India. Responsibilities included:
+						<ul>
+							<li>Developing and implementing safety policies and procedures.</li>
+							<li>Conducting risk assessments and ensuring compliance with regulatory requirements.</li>
+							<li>Providing safety training to employees and subcontractors.</li>
+							<li>Investigating accidents and implementing preventive measures.</li>
+							<li>Monitoring and reporting on safety performance.</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Jan 2010 - Dec 2011</span>
+					<h2>Health and Safety Deputy Manager</h2>
+					<span class="position">Essar Projects</span>
+					<p class="mt-4">Served as a key member of the Health and Safety team for construction projects in West Bengal, India. Responsibilities included:
+						<ul>
+							<li>Assisting in the development and implementation of safety programs.</li>
+							<li>Conducting safety audits and inspections.</li>
+							<li>Providing safety training to workers and subcontractors.</li>
+							<li>Assisting in incident investigations and root cause analysis.</li>
+							<li>Ensuring compliance with safety regulations and company policies.</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Jan 2009 - Dec 2009</span>
+					<h2>Occupational Health and Safety Specialist</h2>
+					<span class="position">Pink City Expressway Private Limited</span>
+					<p class="mt-4">Contributed to safety initiatives for infrastructure projects in Jaipur, Rajasthan, India. Responsibilities included:
+						<ul>
+							<li>Conducting safety training sessions and toolbox talks.</li>
+							<li>Performing safety inspections and risk assessments.</li>
+							<li>Investigating accidents and near misses.</li>
+							<li>Developing safety procedures and protocols.</li>
+							<li>Ensuring compliance with regulatory standards.</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+
+				</div>
+
+				
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		
+				</div>
+			</div>
+		
+			
+		</div>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">NEBOSH</span>
+					<h2>NEBOSH</h2>
+					<span class="position">Level 6 Diploma, Occupational Safety and Health</span>
+					<p class="mt-4">Skills: Infrastructure Projects · Safety Culture</p>
+				</div>
+			</div>
+		
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">British Safety Council</span>
+					<h2>British Safety Council</h2>
+					<span class="position">Diploma of Education, Occupational Health and Safety</span>
+					<p class="mt-4">Skills: Infrastructure Projects · Safety Culture</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Jawaharlal Nehru National Youth Centre</span>
+					<h2>Jawaharlal Nehru National Youth Centre</h2>
+					<span class="position">PG Diploma in Industrial Safety Engineering</span>
+					<p class="mt-4">Skills: Infrastructure Projects</p>
+				</div>
+			</div>
+		
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Project Management Institute</span>
+					<h2>Project Management Institute</h2>
+					<span class="position">PMP</span>
+					<p class="mt-4">Skills: Infrastructure Projects</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">IRCA ISO 45001</span>
+					<h2>IRCA ISO 45001</h2>
+					<span class="position">Lead Auditor</span>
+					<p class="mt-4">Skills: Infrastructure Projects</p>
+				</div>
+			</div>
+		
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Osmania University</span>
+					<h2>Osmania University</h2>
+					<span class="position">Bachelor of Science - BS</span>
+					<p class="mt-4">Skills: Infrastructure Projects</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Indian School of Labour Education</span>
+					<h2>Indian School of Labour Education</h2>
+					<span class="position">Diploma in Industrial Safety</span>
+					<p class="mt-4">Skills: Infrastructure Projects</p>
+				</div>
+			</div>
+		</div>
+		
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">BLOGS</h2>
+            <p>All the Research work and BLOGS done by Mr Madhukar Vasireddy will be available done below.</p>
+          </div>
+        </p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <h2 class="mb-4">Recommendations</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <img src="C:\Users\rudra\OneDrive\Desktop\1517761322930.jpeg" alt="Madepally Ramakrishna Paramahamsa profile picture">
+              <p style="font-family: Courier New, monospace; color: green; text-decoration: underline;">Madepally Ramakrishna Paramahamsa</p>
+              <p class="mt-4" style="font-family: Courier New, monospace;">2nd Second degree connection
+                Senior SHE Manager at MAHSR Bullet Train Project
+                October 13, 2023, Madepally Ramakrishna worked with Madhukar Vasireddy on the same team
+                I had worked closely with Madhukar Vasireddy he is having exceptional personality, he is dedicated and loyal to his profession. he is a good team player. he was exceptional in problem solving and also motivates his colleagues to upgrade their skills. he is always an helping hand to upgrade skills. He is an guide to me for my betterment. He always back of me. He is an inspiration to me in professional life.I had worked closely with Madhukar Vasireddy he is having exceptional personality, he is dedicated and loyal to his profession. he is a good team player. he was exceptional in problem solving and also motivates his colleagues to upgrade their skills. he is always an helping hand to upgrade skills. He is an guide to me for my betterment. He always back of me. He is an inspiration to me in professional life.</p>
+            </div>
+          </div>
+				</div>
+				<!-- Repeat similar structure for other recommendations -->
+				<section class="ftco-section" id="project-section">
+					<div class="container">
+					  <div class="row justify-content-center mb-5 pb-5">
+						<div class="col-md-7 heading-section text-center ftco-animate">
+						  <h1 class="big big-2">Projects</h1>
+						  <h2 class="mb-4">Recommendations</h2>
+						  <div class="row">
+							<div class="col-md-6">
+							  <div class="resume-wrap ftco-animate">
+								<img src="C:\Users\rudra\OneDrive\Desktop\1654405421361.jpeg" alt="Mohamed Ali Khan , PMP profile picture">
+								<p style="font-family: Courier New, monospace; color: green; text-decoration: underline;">Mohamed Ali Khan , PMP</p>
+								<p class="mt-4" style="font-family: Courier New, monospace;">2nd Second degree connection
+								  International Airports, Metro Depot, Stadium
+								  August 6, 2023, Mohamed Ali worked with Madhukar Vasireddy on the same team
+								  Madhukar is a professional and passionate leader. I was very impressed with the way he handled every issue professionally. He is eager to learn a creative way to do his job and always strives for the best results. His priority has always been to improve the company's reputation by creating a positive safety culture for the project he is working on. He works collaboratively in a team environment. He is an excellent leader and a very dynamic mentor to his subordinates. He has extensive technical knowledge in health and safety and his achievements testify to his caliber. I always recommend him for any opportunity he pursuesMadhukar is a professional and passionate leader. I was very impressed with the way he handled every issue professionally. He is eager to learn a creative way to do his job and always strives for the best results. His priority has always been to improve the company's reputation by creating a positive safety culture for the project he is working on. He works collaboratively in a team environment. He is an excellent leader and a very dynamic mentor to his subordinates. He has extensive technical knowledge in health and safety and his achievements testify to his caliber. I always recommend him for any opportunity he pursues</p>
+							  </div>
+							</div>
+							<div class="col-md-6">
+								<div class="resume-wrap ftco-animate">
+								  <img src="C:\Users\rudra\OneDrive\Desktop\1699514725778.jpeg" alt="Daniel Amobi - CMIOSH profile picture">
+								  <p style="font-family: Courier New, monospace; color: green; text-decoration: underline;">Daniel Amobi - CMIOSH</p>
+								  <p class="mt-4" style="font-family: Courier New, monospace;">2nd Second degree connection
+									B.Engr. (Chemical), CMIOSH, MIIRSM, IDipNEBOSH, NVQ-6, BOSIET/HUET, OSHA 30-hours, IRCA Lead Auditor (ISO 45001, 9001, 14001, 50001)
+									July 22, 2023, Madhukar Vasireddy was Daniel’s client
+									I had the pleasure of working with many professionals in my career path, but Mr. Madhukar is someone who I will always remember fondly. Having worked with him for 4-years in the Katara Twin Tower Project, Lusail Qatar. I must say he is an excellent HSE professional. 
+					
+									Mr. Madhukar was the principal contractor’s HSE Manager for HBK and I learned a lot from him. He’s always willing to lend a hand to anyone who needs it and was instrumental in the outstanding achievement of the 45Million LTI free recorded on the project. 
+					
+									I must say he is an energetic HSE professional. As his sub-contractor at the time, I was impressed by his work ethics and managerial skills also with his great sense of humor, work ethics and commitment to responsibilities with effective communication skills.
+					
+									I am glad to have worked with him and have no hesitation in recommending him to potential employers.</p>
+								</div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</section>				  
+			</div>
+		</div>
+	</section>
+	
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="18">0</strong>
+                <span>years of experience</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="6">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>MY vision <span>   </span> </h2>
+						<div class="heading"> <h4>CHANGE THE ATTITUDE TO SAVE THE WORLD. &amp;  </h4>
+						<br>
+						
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">REACH OUT</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>DOHA, QATAR</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+974 50255562</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">madhusafety.mv@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resume link</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/NaEAEcopsX6ktTsK8" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/madhukar-vasireddy-idip-ims-lead-auditor-grad-iosh-pmp%C2%AE-42b748167/"><span class="icon-linkedin"></span></a></li>  
+					  
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
